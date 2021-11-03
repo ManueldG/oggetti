@@ -18,7 +18,7 @@ class Sviluppatore(Persona):
         self.pagaAnnua = pagaAnnua
 
     def ProfiloPersonale(self):
-        return (f"{self.posizione} {self.pagaAnnua}")
+        return (f"{super().ProfiloPersonale()} {self.posizione} {self.pagaAnnua}")
 
     def __str__(self):
         
